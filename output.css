@@ -24,6 +24,7 @@
     --color-bg_icons: #292929;
     --spacing-10: 1rem;
     --spacing-20: 2rem;
+    --font-poppins: 'Poppins', sans-serif;
     --text-title: 2.7rem;
     --text-fwf: 1.8rem;
     --text-step: 1.5rem;
@@ -600,6 +601,9 @@
   .overflow-x-auto {
     overflow-x: auto;
   }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
   .rounded-\[15px\] {
     border-radius: 15px;
   }
@@ -792,6 +796,9 @@
   .pr-\[3rem\] {
     padding-right: 3rem;
   }
+  .font-poppins {
+    font-family: var(--font-poppins);
+  }
   .text-\[1\.1rem\] {
     font-size: 1.1rem;
   }
@@ -849,6 +856,9 @@
   }
   .text-\[1\.\] {
     color: 1.;
+  }
+  .text-\[poppins\] {
+    color: poppins;
   }
   .text-black {
     color: var(--color-black);
