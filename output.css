@@ -7,7 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-green-700: oklch(52.7% 0.154 150.069);
     --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-pink-400: oklch(71.8% 0.202 349.761);
     --color-pink-600: oklch(59.2% 0.249 0.584);
     --color-black: #000;
@@ -644,6 +646,28 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .from-\[\#7A87FB\] {
+    --tw-gradient-from: #7A87FB;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-pink_gradient {
+    --tw-gradient-from: var(--color-pink_gradient);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-25\% {
+    --tw-gradient-from-position: 25%;
+  }
+  .to-\[\#FFD49C\] {
+    --tw-gradient-to: #FFD49C;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-blue_gradient {
+    --tw-gradient-to: var(--color-blue_gradient);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-10\% {
+    --tw-gradient-to-position: 10%;
+  }
   .p-\[0\.1rem\] {
     padding: 0.1rem;
   }
@@ -760,6 +784,109 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .hover\:scale-\[1\.1\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.1;
+      }
+    }
+  }
+  .hover\:scale-\[1\.2\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.2;
+      }
+    }
+  }
+  .hover\:scale-\[1\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1;
+      }
+    }
+  }
+  .hover\:bg-black_gradient {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-black_gradient);
+      }
+    }
+  }
+  .hover\:bg-blue_gradient {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue_gradient);
+      }
+    }
+  }
+  .hover\:bg-gradient-to-r {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to right in oklab;
+        background-image: linear-gradient(var(--tw-gradient-stops));
+      }
+    }
+  }
+  .hover\:from-\[\#7A87FB\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-from: #7A87FB;
+        --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+      }
+    }
+  }
+  .hover\:from-pink_gradient {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-from: var(--color-pink_gradient);
+        --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+      }
+    }
+  }
+  .hover\:from-25\% {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-from-position: 25%;
+      }
+    }
+  }
+  .hover\:to-\[\#FFD49C\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-to: #FFD49C;
+        --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+      }
+    }
+  }
+  .hover\:to-blue_gradient {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-to: var(--color-blue_gradient);
+        --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+      }
+    }
+  }
+  .hover\:to-10\% {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-to-position: 10%;
+      }
+    }
+  }
+  .hover\:text-blue-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-700);
+      }
+    }
+  }
+  .hover\:text-green-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-green-700);
+      }
+    }
   }
   .lg\:mx-\[3rem\] {
     @media (width >= 64rem) {
@@ -945,6 +1072,48 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -1030,6 +1199,15 @@
       --tw-translate-y: 0;
       --tw-translate-z: 0;
       --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
