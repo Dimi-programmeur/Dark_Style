@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@theme{
+    --color-blue_gradient: #7A87FB;
+    --color-pink_gradient: #FFD49C;
+    --color-gris_gradient: #7D7D7D;
+    --color-black_gradient: #1E1E1E;
+    --color-bg_circle: #878787;
+    --color-bg_icons: #292929;
+
+    --spacing-10: 1rem;
+    --spacing-20: 2rem;
+
+    --font-poppins: 'Poppins', sans-serif;
+
+    --text-title: 2.7rem;
+    --text-fwf: 1.8rem;
+    --text-step: 1.5rem;
+    --text-small: 1.3rem;
+    --text-projet_name: 3.5rem;
+}
+
+@layer utilities  {
+    .bg-gradient{
+        background: linear-gradient(to right, #7A87FB,#FFD49C);
+    }
+    .border-gradient{
+        border: 0.2rem solid transparent;
+        border-image: linear-gradient(to right, #FFD49C,#7A87FB) 1;
+    }
+    .bg-gradient-reverse{
+        background: linear-gradient(to right, #FFD49C,#7A87FB);
+    }
+}
+
