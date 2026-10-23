@@ -13,7 +13,7 @@
   --spacing-10: 1rem;
   --spacing-20: 2rem;
 
-  --font-poppins: "Poppins";
+  --font-poppins: "Poppins", sans-serif;
 
   --text-title: 2.7rem;
   --text-fwf: 1.8rem;
